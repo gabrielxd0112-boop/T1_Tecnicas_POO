@@ -204,6 +204,15 @@ public class Paciente {
         validarCorreo();
         validarDatosMedicos();
     }
-    
-    
+    @Override
+    public String toString() {
+    return "ID: " + idPaciente
+            + "\nNombre: " + nombreCompleto
+            + "\nDocumento: " + tipoDocumento + " - " + numeroDocumento
+            + "\nFecha Nacimiento: " + fechaNacimiento
+            + "\nTipo Sangre: " + tipoSangre
+            + "\nTeléfono: " + telefono
+            + "\nCorreo: " + correo
+            + "\nAlergias: " + listarAlergias();
+    }
 }
